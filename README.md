@@ -1,2 +1,4 @@
-# Fundamentos de Logica e Algoritmos: 
-Trabalho do 4º bimestre de FLA: Cadastro de Pessoas utlizando Classas e Funções
+# Cadastro de Pessoas: 
+## Trabalho do 4º bimestre de Fundamentos de Logica e Algoritmos: Cadastro de Pessoas utlizando Classas e Funções
+
+ 
