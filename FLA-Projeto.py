@@ -8,18 +8,20 @@ def Menu():
     print('* 4 - Sair do programa           *')
     print('*' * 34)
     op = input('Qual opção deseja? ')
+    print('\n')
     if op == '1' or op == '2' or op == '3' or op == '4':
         return int(op)
     else:
-        print('Opção inválida!')
+        print('Opção inválida!' , '\n')
     return -1
 
 def fazcadastro():
     lista1 = []
     nome = input('Qual é o seu nome? ')
+    nomeM = nome.title()
     idade = int(input('Informe sua idade: '))
     sexo = input('Qual o seu sexo? ')
-    lista1.append(nome)
+    lista1.append(nomeM)
     lista1.append(idade)
     lista1.append(sexo)
     lista_cadastro.append(lista1)
@@ -28,8 +30,9 @@ def fazcadastro():
 def listcadastro():
 
     for lista in lista_cadastro:
-        for ll in lista:
-            print(ll)
+            print('nome: ', lista[0])
+            print('idade: ', lista[1],'anos')
+            print('sexo: ', lista[2], '\n')
 
 
 def remcadastro():
@@ -42,14 +45,12 @@ def remcadastro():
 
     if list_delete in lista_cadastro:
         print('')
-        print('Removido com sucesso!')
+        print('Removido com sucesso!', '\n')
         return lista_cadastro.remove(list_delete)
     else:
         print('')
-        print('Algo foi escrito errado! ')
+        print('Algo foi escrito errado! ', '\n')
     return -1
-
-    print('')
 
 while True:
     op = Menu()
